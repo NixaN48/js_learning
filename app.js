@@ -1,24 +1,38 @@
 console.log("Привет, мир!");
-
-// чутка переменных
+/*
+// чутка переменных, убираю, так как буду создавать объект
 let myName = "Nikita"; // строка
 let age = 35; // число
 let isProgrammer = false; // булев тип
 console.log(myName, age, isProgrammer)
+*/
+
+let myPerson = {
+    myName: "Никита",
+    age: 35,
+    isProgrammer: false,
+    greet: function() {
+        console.log(`Привет ${this.myName}! Тебе уже ${this.age}?`)
+    }
+
+}
+
+console.log(myPerson.myName);
+myPerson.greet();
 
 // тут пробуем if else
-if (age >= 30) {
+if (myPerson.age >= 30) {
     console.log ("Ты скуфяра");
 }
 else {
     console.log ("Ты молодой ещё");
 }
 
-if (isProgrammer == true) {
+if (myPerson.isProgrammer == true) {
     console.log ("Ты красава");
 }
 else {
-    console.log (`Ты нищук, ${myName}!`);
+    console.log (`Ты нищук, ${myPerson.myName}!`);
 }
 
 // проверка шаблонной многострочной строки
