@@ -152,5 +152,3 @@ console.log(sum);
 let sum = numbers.reduce((acc, num) => acc + num, 0);
 console.log(sum);
 
-//fgjhdslkfjsdlfjldsk
-//fgjhdslkfjsdlfjldsksdf
